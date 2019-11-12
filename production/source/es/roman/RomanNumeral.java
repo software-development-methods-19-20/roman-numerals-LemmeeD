@@ -12,9 +12,7 @@ public class RomanNumeral {
     public String toString() {
         if (this.decimal == 0)
             return "";
-        else if (this.decimal == 2)
-            return "II";
         else
-            return "I";
+            return "I".repeat(decimal);
     }
 }
