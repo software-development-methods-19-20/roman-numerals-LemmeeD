@@ -14,9 +14,14 @@ public class RomanNumeral {
             return "";
         else if (this.decimal==4)
             return "IV";
+        else if(this.decimal == 10)
+            return "X";
+        else if(this.decimal == 9)
+            return "IX";
         else if (this.decimal>=5) {
             return "V"+(new RomanNumeral(this.decimal-5)).toString();
-        } else
+        }
+        else
             return "I".repeat(decimal);
     }
 
