@@ -12,7 +12,11 @@ public class RomanNumeral {
     public String toString() {
         if (this.decimal == 0)
             return "";
+        else if (this.decimal==4)
+            return "IV";
         else
             return "I".repeat(decimal);
     }
+
+
 }

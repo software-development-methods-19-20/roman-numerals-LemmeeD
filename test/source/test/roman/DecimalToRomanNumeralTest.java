@@ -31,4 +31,9 @@ public class DecimalToRomanNumeralTest {
     void threeIsIII() {
         check(3, "III");
     }
+
+    @Test
+    void fourIsIV() {
+        check(4, "IV");
+    }
 }
