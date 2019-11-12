@@ -1,5 +1,7 @@
 package test.roman;
 import es.roman.RomanNumeral;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import javax.naming.NamingException;
@@ -17,68 +19,42 @@ public class DecimalToRomanNumeralTest {
         assertEquals(s, romanNumeral.toString());
     }
 
-    @Test
-    void oneIsI() {
-        check(1, "I");
-    }
+    @Test void oneIsI() { check(1, "I"); }
 
-    @Test
-    void twoIsII() {
-        check(2, "II");
-    }
+    @Test void twoIsII() { check(2, "II"); }
 
-    @Test
-    void threeIsIII() {
-        check(3, "III");
-    }
+    @Test void threeIsIII() { check(3, "III"); }
 
-    @Test
-    void fourIsIV() {
-        check(4, "IV");
-    }
+    @Test void fourIsIV() { check(4, "IV"); }
 
-    @Test
-    void fiveIsV() {
-        check(5, "V");
-    }
+    @Test void fiveIsV() { check(5, "V"); }
 
-    @Test
-    void sixIsVI() {
-        check(6, "VI");
-    }
+    @Test void sixIsVI() { check(6, "VI"); }
 
-    @Test
-    void sevenInVII() {
-        check(7, "VII");
-    }
+    @Test void sevenInVII() { check(7, "VII"); }
 
-    @Test
-    void eightIsVIII() {
-        check(8, "VIII");
-    }
+    @Test void eightIsVIII() { check(8, "VIII"); }
 
-    @Test
-    void nineIsIX() {
-        check(9, "IX");
-    }
+    @Test void nineIsIX() { check(9, "IX"); }
 
-    @Test
-    void tenIsX() {
-        check(10, "X");
-    }
+    @Test void tenIsX() { check(10, "X"); }
 
-    @Test
-    void elevenIsXI() {
-        check(11, "XI");
-    }
+    @Test void elevenIsXI() { check(11, "XI"); }
 
-    @Test
-    void twelveIsXII() {
-        check(12, "XII");
-    }
+    @Test void twelveIsXII() { check(12, "XII"); }
 
-    @Test
-    void thirteenIsXIII() {
-        check(13, "XIII");
-    }
+    @Test void thirteenIsXIII() { check(13, "XIII"); }
+
+    @Test void fourteenIsXIV() { check(14, "XIV"); }
+
+    @Test void fifteenIsXV() { check(15, "XV"); }
+
+    @Test void sixteenIsXVI() { check(16, "XVI"); }
+
+    @Test void seventeenIsXVII() { check(17, "XVII"); }
+
+    @Test void eighteenIsXVIII() { check(18, "XVIII"); }
+
+    @Test void nineteenisXIX() { check(19, "XIX"); }
+
 }
