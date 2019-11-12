@@ -51,4 +51,9 @@ public class DecimalToRomanNumeralTest {
     void sevenInVII() {
         check(7, "VII");
     }
+
+    @Test
+    void eightIsVIII() {
+        check(8, "VIII");
+    }
 }
