@@ -23,7 +23,7 @@ public class RomanNumeral {
             return "XC"+(new RomanNumeral(this.decimal - 90)).toString();
         }
         else if (mod>=5) {
-            return "V"+(new RomanNumeral(this.decimal - 50)).toString();
+            return "L"+(new RomanNumeral(this.decimal - 50)).toString();
         }
         else if (mod >= 1) {
             // 12 / 10 = 2..... 12 % 10 = 1....

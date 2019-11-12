@@ -71,4 +71,11 @@ public class DecimalToRomanNumeralTest {
 
     @Test void thirtyIsXXX() { check(30, "XXX"); }
 
+    @Test void thirtyeightIsXXXVIII() { check(38, "XXXVIII"); }
+    @Test void fiftyoneIsLI() { check(51, "LI"); }
+    @Test void sistyfourIsLXIV() { check(64, "LXIV"); }
+    @Test void seventysevenIsLXXVII() { check(77, "LXXVII"); }
+    @Test void eightyeightIsLXXXVIII() { check(88, "LXXXVIII"); }
+    @Test void ninetynineIsXCXIX() { check(99, "XCIX"); }
+
 }
